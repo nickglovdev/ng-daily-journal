@@ -1,25 +1,18 @@
-const journalEntries = [
-    {
-        date: "5/20/20",
-        conceptsCovered: "HTML",
-        journalEntry: "It's fun to relearn more HTML",
-        mood: "Happy"
-    },
+let journalEntries = []
 
-    {
-        date: "5/22/20",
-        conceptsCovered: "CSS",
-        journalEntry: "I love to play around with CSS",
-        mood: "Happy"
-    },
-
-    {
-        date: "5/29/20",
-        conceptsCovered: "Objects",
-        journalEntry: "It was good to look over Objects again",
-        mood: "Happy"
-    }
-]
+const getEntriesData = () => {
+    return fetch("http://localhost:8088/journalEntries").then(
+        (httpResponse) => {
+            return httpResponse.json()
+        }
+    )
+        .then(
+            (arrayOfEntries) => {
+                // 100 percent sure the data is back
+                journalEntries = arrayOfEntries
+            }
+        )
+}
 
 const makeJournalEntryComponent = (journalObject) => {
     // Create your own HTML structure for a journal entry
@@ -36,6 +29,7 @@ const renderJournalEntries = (entries) => {
         journalArticleElement.innerHTML += journalHTML
     }
 }
-
+getEntriesData().then( () => {
+    renderJournalEntries(journalEntries)
+})
 // Invoke the render function
-renderJournalEntries(journalEntries)
