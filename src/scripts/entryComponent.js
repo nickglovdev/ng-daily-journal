@@ -5,3 +5,5 @@ const makeJournalEntryComponent = (journalObject) => {
     I learned ${journalObject.journalEntry}. I learned all of this on the date of ${journalObject.date} </div>
     `
 }
+
+export default makeJournalEntryComponent
