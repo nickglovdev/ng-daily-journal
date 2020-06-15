@@ -1,2 +1,3 @@
 console.log(API)
-API.getJournalEntries().then((entriesResponse) => renderJournalEntries(entriesResponse))
+API.getJournalEntries().then
+((entriesResponse) => renderJournalEntries(entriesResponse))
