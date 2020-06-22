@@ -1,25 +1,25 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "5/20/20",
-            "conceptsCovered": "HTML",
-            "journalEntry": "It's fun to relearn more HTML",
-            "mood": "Happy"
-        },
-        {
-            "id": 2,
-            "date": "5/22/20",
-            "conceptsCovered": "CSS",
-            "journalEntry": "I love to play around with CSS",
-            "mood": "Happy"
-        },
-        {
-            "id": 3,
-            "date": "5/29/20",
-            "conceptsCovered": "Objects",
-            "journalEntry": "It was good to look over Objects again",
-            "mood": "Happy"
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "5/20/20",
+      "conceptsCovered": "HTML",
+      "journalEntry": "It's fun to relearn more HTML",
+      "mood": "Happy"
+    },
+    {
+      "id": 2,
+      "date": "5/22/20",
+      "conceptsCovered": "CSS",
+      "journalEntry": "I love to play around with CSS",
+      "mood": "Happy"
+    },
+    {
+      "date": "2020-06-24",
+      "conceptsCovered": "Hello",
+      "journalEntry": "Hello",
+      "mood": "Sad",
+      "id": 3
+    }
+  ]
 }
