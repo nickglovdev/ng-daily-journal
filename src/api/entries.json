@@ -1,25 +1,18 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "5/20/20",
+      "date": "2020-07-01",
       "conceptsCovered": "HTML",
-      "journalEntry": "It's fun to relearn more HTML",
-      "mood": "Happy"
-    },
-    {
-      "id": 2,
-      "date": "5/22/20",
-      "conceptsCovered": "CSS",
-      "journalEntry": "I love to play around with CSS",
-      "mood": "Happy"
-    },
-    {
-      "date": "2020-06-24",
-      "conceptsCovered": "Hello",
       "journalEntry": "Hello",
       "mood": "Sad",
       "id": 3
+    },
+    {
+      "date": "2020-06-17",
+      "conceptsCovered": "Dogs",
+      "journalEntry": "Dogs are fun",
+      "mood": "Sad",
+      "id": 4
     }
   ]
 }

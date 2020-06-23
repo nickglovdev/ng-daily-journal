@@ -2,6 +2,7 @@ import API from './data.js';
 import renderJournalEntries from './entryList.js';
 import entriesCreator from './createEntry.js'
 
+
 API.getJournalEntries().then
     ((entriesResponse) => renderJournalEntries(entriesResponse))
 
@@ -35,4 +36,22 @@ buttonSelectionSubmit.addEventListener("click", clickEvent => {
             });
     }
 })
+
+buttonSelectionSubmit.addEventListener("click", event => {
+    const hiddenEntrytId = document.querySelector("#journalId");
+
+    if (hiddenEntrytId.value !== "") {
+		const dateSelection = document.querySelector("#journalDate").value;
+		const conceptSelection = document.querySelector("#journalConcept").value;
+		const entrySelection = document.querySelector("#journalEntry").value;
+		const moodSelection = document.querySelector("#journalMood").value;
+		//(name, quantity, desc, shapeId, typeId, seasonId)
+		API.updateEntry(hiddenEntrytId.value, entriesCreator(dateSelection, conceptSelection, entrySelection, moodSelection))
+		.then(() => {
+
+		});
+    } 
+});
+
+
 
