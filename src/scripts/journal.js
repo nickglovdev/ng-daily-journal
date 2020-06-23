@@ -2,6 +2,7 @@ import API from './data.js';
 import renderJournalEntries from './entryList.js';
 import entriesCreator from './createEntry.js'
 
+
 API.getJournalEntries().then
     ((entriesResponse) => renderJournalEntries(entriesResponse))
 
@@ -35,4 +36,6 @@ buttonSelectionSubmit.addEventListener("click", clickEvent => {
             });
     }
 })
+
+
 
