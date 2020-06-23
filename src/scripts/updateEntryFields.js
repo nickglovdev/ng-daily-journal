@@ -5,13 +5,14 @@ const updateEntryField = (entryObj) => {
     const journalConceptInput = document.querySelector("#journalConcept")
     const journalEntryInput = document.querySelector("#journalEntry")
     const journalMoodInput = document.querySelector("#journalMood")
+
+
+    hiddenEntryId.value = entryObj.id
+    journalDateInput.value = entryObj.date
+    journalConceptInput.value = entryObj.conceptsCovered
+    journalEntryInput.value = entryObj.journalEntry
+    journalMoodInput.value = entryObj.mood
+
 }
-
-hiddenEntryId.value = entryObj.id
-journalDateInput.value = entryObj.date
-journalConceptInput = entryObj.conceptsCovered
-journalEntryInput = entryObj.journalEntry
-journalMoodInput = entryObj.mood
-
 
 export default updateEntryField
